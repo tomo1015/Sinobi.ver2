@@ -47,6 +47,6 @@ MonoBehaviour:
   MAX_PLAY_SE: 10
   m_bgmList: []
   m_seList: []
-  m_masterVolume: 0.8
-  m_bgmVolume: 0.8
-  m_seVolume: 0.8
+  m_masterVolume: 1
+  m_bgmVolume: 1
+  m_seVolume: 1

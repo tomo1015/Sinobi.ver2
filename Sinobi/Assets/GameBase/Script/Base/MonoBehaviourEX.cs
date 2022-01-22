@@ -6,7 +6,7 @@ namespace Base
 {
     public abstract class MonoBehaviourEX : MonoBehaviour
     {
-        protected delegate void FuncUpdateStep();//falseで最高神
+        protected delegate bool FuncUpdateStep();//falseで再更新
         protected FuncUpdateStep m_updateStep;//呼び出される関数
 
         /// <summary>

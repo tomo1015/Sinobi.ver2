@@ -58,19 +58,20 @@ namespace Base
         /// <summary>
         /// フェードアウト更新
         /// </summary>
-        protected abstract void FadeOutStep();
+        protected abstract bool FadeOutStep();
 
         /// <summary>
         /// フェードイン更新
         /// </summary>
-        protected abstract void FadeInStep();
+        protected abstract bool FadeInStep();
 
         /// <summary>
         /// 終了時更新
         /// </summary>
-        protected virtual void EndStep()
+        protected virtual bool EndStep()
         {
             Destroy(this.gameObject);
+            return true;
         }
     }
 

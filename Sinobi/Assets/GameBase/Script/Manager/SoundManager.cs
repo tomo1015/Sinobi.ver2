@@ -29,11 +29,11 @@ namespace Utility
         [SerializeField, Header("SEをリストに登録")]
         private List<AudioClip> m_seList                = null;
         [SerializeField, Header("マスター音量")]
-        private float           m_masterVolume          = 0.8f;
+        private float           m_masterVolume          = 1.0f;
         [SerializeField, Header("BGM音量")]
-        private float           m_bgmVolume             = 0.8f;
+        private float           m_bgmVolume             = 1.0f;
         [SerializeField, Header("SE音量")]
-        private float           m_seVolume              = 0.8f;
+        private float           m_seVolume              = 1.0f;
         
         private Dictionary<string, AudioClip> m_bgmDict        = null;
         private Dictionary<string, AudioClip> m_seDict         = null;
@@ -142,7 +142,7 @@ namespace Utility
         /// <param name="defaultVolume">基礎音量</param>
         /// <param name="isLoop">ループフラグ</param>
         /// <returns>使用されたオーディオオブジェクト</returns>
-        public AudioGameObject PlaySE_2D(string seName, float defaultVolume, bool isLoop)
+        public AudioGameObject PlaySE_2D(string seName, float defaultVolume = 1.0f, bool isLoop = false)
         {
             if (!m_seDict.ContainsKey(seName)) return null;
 
@@ -167,7 +167,7 @@ namespace Utility
         /// <param name="defaultVolume">基礎音量</param>
         /// <param name="isLoop">ループフラグ</param>
         /// <returns>使用されたオーディオオブジェクト</returns>
-        public AudioGameObject PlaySE_3D(string seName, Vector3 pos, Transform target, float defaultVolume, bool isLoop)
+        public AudioGameObject PlaySE_3D(string seName, Vector3 pos, Transform target, float defaultVolume = 1.0f, bool isLoop = false)
         {
             if (!m_seDict.ContainsKey(seName)) return null;
 
@@ -212,12 +212,13 @@ namespace Utility
         /// </summary>
         /// <param name="bgmName">ハンドル名</param>
         /// <param name="defaultVolume">基礎音量</param>
+        /// <param name="isLoop">BGMをループするか</param>
         /// <returns>使用されたオーディオオブジェクト</returns>
-        public AudioGameObject PlayBGM(string bgmName, float defaultVolume)
+        public AudioGameObject PlayBGM(string bgmName, float defaultVolume = 1.0f, bool isLoop = true)
         {
             if (!m_bgmDict.ContainsKey(bgmName)) return null;
             m_bgmAudioObject.Stop();
-            m_bgmAudioObject.PlayStart(m_bgmDict[bgmName], Vector3.zero, null, defaultVolume, true, 0.0f);
+            m_bgmAudioObject.PlayStart(m_bgmDict[bgmName], Vector3.zero, null, defaultVolume, isLoop, 0.0f);
             return m_bgmAudioObject;
         }
 

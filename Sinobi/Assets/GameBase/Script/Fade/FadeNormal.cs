@@ -22,7 +22,7 @@ public class FadeNormal : Base_Fade
         m_image = GetComponentInChildren<Image>();
     }
 
-    protected override void FadeOutStep()
+    protected override bool FadeOutStep()
     {
         m_alpha += Time.deltaTime * SPEED;
         m_image.color = new Color(COVER_COLOR.r, COVER_COLOR.g, COVER_COLOR.b, m_alpha);
@@ -31,12 +31,14 @@ public class FadeNormal : Base_Fade
             m_updateStep = null;
             m_alpha      = 1.0f;
         }
+        return true;
     }
 
-    protected override void FadeInStep()
+    protected override bool FadeInStep()
     {
         m_alpha -= Time.deltaTime * SPEED;
         m_image.color = new Color(COVER_COLOR.r, COVER_COLOR.g, COVER_COLOR.b, m_alpha);
         if (m_alpha <= 0.0f) m_updateStep = EndStep;
+        return true;
     }
 }
