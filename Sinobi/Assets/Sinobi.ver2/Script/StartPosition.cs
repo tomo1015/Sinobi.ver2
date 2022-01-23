@@ -1,17 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
-
 /// <summary>
-/// プレイヤースタート位置
+/// プレイヤーオブジェクト
 /// </summary>
 public class StartPosition : MonoBehaviour
 {
     [SerializeField, Header("プレイヤープレハブ")]
     private GameObject m_PlayerObject = null;
-    // Start is called before the first frame update
+
     private void Start()
     {
         // TODO: 出現エフェクトとアニメーションを考える
