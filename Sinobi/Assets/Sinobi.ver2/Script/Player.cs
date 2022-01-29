@@ -53,8 +53,8 @@ public class Player : MonoBehaviour
         {
             // TODO：止まっている時に向きを考える
             animator.SetBool("IsWalk", false);
-            //movement.x = 0.0f;
-            //movement.z = 0.0f;
+            movement.x = 0.0f;
+            movement.z = 0.0f;
         }
 
         //キャラクターの向きを移動方向に向ける

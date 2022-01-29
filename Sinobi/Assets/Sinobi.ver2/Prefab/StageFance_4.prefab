@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9044760169357421751}
   - component: {fileID: 6571262735986360646}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fence (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 8532746682838953152}
   - component: {fileID: 7796391004196765498}
   - component: {fileID: 775437642169491929}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 3105337767032059051}
   - component: {fileID: 4223638888852150605}
   - component: {fileID: 7349691364499443939}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 944517388713067932}
   - component: {fileID: 380703750029891290}
   - component: {fileID: 8662363348900798445}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 5360410819419093919}
   - component: {fileID: 359500465650979092}
   - component: {fileID: 2716035848944444764}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,7 +388,7 @@ GameObject:
   - component: {fileID: 7860799684799494570}
   - component: {fileID: 6923331882935655576}
   - component: {fileID: 6672712151613815497}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -471,7 +471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8679114545896201505}
   - component: {fileID: 8775650294969102928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fence (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -518,7 +518,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4012002736099703060}
   - component: {fileID: 4051944712675123436}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fence (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,7 +564,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6519795089349869658}
-  m_Layer: 0
+  - component: {fileID: 610762460}
+  m_Layer: 6
   m_Name: StageFance_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -589,6 +590,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &610762460
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6519795089349869656}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.917034, y: 1.6357515, z: 0.45899802}
+  m_Center: {x: -13.331582, y: 0.7803128, z: -0.0337933}
 --- !u!1 &6632961540499261292
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,7 +614,7 @@ GameObject:
   - component: {fileID: 3251821049524641228}
   - component: {fileID: 3904560329481886560}
   - component: {fileID: 1802029006469286532}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -684,7 +698,7 @@ GameObject:
   - component: {fileID: 4066436886941144299}
   - component: {fileID: 4769980363623935565}
   - component: {fileID: 599916525074977355}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -765,7 +779,7 @@ GameObject:
   - component: {fileID: 5539338436605303893}
   - component: {fileID: 7007977480273846628}
   - component: {fileID: 4661579255132408213}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -845,7 +859,7 @@ GameObject:
   m_Component:
   - component: {fileID: 825610097767942765}
   - component: {fileID: 4101104058950020717}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fence (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
