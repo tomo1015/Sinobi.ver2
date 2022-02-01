@@ -1549,6 +1549,10 @@ PrefabInstance:
       propertyPath: AUDIO_GAMEOBJ_PREFAB
       value: 
       objectReference: {fileID: 2045967192}
+    - target: {fileID: 8046407786335885787, guid: a1f97c9cfcd96cc47b3c5ff31e8f9e6f, type: 3}
+      propertyPath: m_bgmList.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1f97c9cfcd96cc47b3c5ff31e8f9e6f, type: 3}
 --- !u!1 &590764341
